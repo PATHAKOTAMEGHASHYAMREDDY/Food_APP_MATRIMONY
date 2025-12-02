@@ -1,0 +1,45 @@
+{
+  "extends": ["html-validate:recommended"],
+  "rules": {
+    "attr-case": "off",
+    "no-implicit-input-type": "off",
+    "void-style": "off",
+    "prefer-tbody": "off",
+    "no-trailing-whitespace": "off",
+    "element-permitted-content": "off"
+  },
+  "elements": [
+    "html5",
+    {
+      "mat-form-field": {
+        "flow": true,
+        "phrasing": true
+      },
+      "mat-label": {
+        "flow": true,
+        "phrasing": true
+      },
+      "mat-error": {
+        "flow": true,
+        "phrasing": true
+      },
+      "mat-table": {
+        "flow": true
+      },
+      "mat-header-cell": {
+        "flow": true,
+        "phrasing": true
+      },
+      "mat-cell": {
+        "flow": true,
+        "phrasing": true
+      },
+      "mat-header-row": {
+        "flow": true
+      },
+      "mat-row": {
+        "flow": true
+      }
+    }
+  ]
+}

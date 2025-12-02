@@ -1,0 +1,25 @@
+.w-100 {
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+table {
+  margin-top: 20px;
+}
+
+button {
+  margin-right: 8px;
+}
+
+.user-notice {
+  margin-top: 20px;
+  padding: 16px;
+  background-color: #e3f2fd;
+  border-radius: 4px;
+  text-align: center;
+  color: #1976d2;
+}

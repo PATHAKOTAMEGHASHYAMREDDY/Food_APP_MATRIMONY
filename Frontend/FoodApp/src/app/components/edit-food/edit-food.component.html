@@ -1,0 +1,24 @@
+<form [formGroup]="foodForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="fill" class="w-100">
+      <mat-label>Name</mat-label>
+      <input matInput type="text" formControlName="name">
+      <mat-error *ngIf="foodForm.get('name')?.hasError('required')">
+        Name is required
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="w-100">
+      <mat-label>Price</mat-label>
+      <input matInput type="number" formControlName="price">
+      <mat-error *ngIf="foodForm.get('price')?.hasError('required')">
+        Price is required
+      </mat-error>
+      <mat-error *ngIf="foodForm.get('price')?.hasError('min')">
+        Price must be positive
+      </mat-error>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit" [disabled]="foodForm.invalid">
+      Update
+    </button>
+  </form>
